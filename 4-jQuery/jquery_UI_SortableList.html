@@ -1,0 +1,54 @@
+<html>
+
+  <head>
+
+    <title>jQuery - Sortable List</title>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <style>
+
+      #sortable {list-style-type: none; margin: 0; padding: 0; width: 60%;}
+      #sortable li {margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em;
+        font-size: 1.4em; height: 18px;}
+      #sortable li span {position: absolute; margin-left: -1.3em;}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <ul id="sortable">
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"
+        ></span>Andrew</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"
+        ></span>Satu</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"
+        ></span>Nooa</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"
+        ></span>Barry</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"
+        ></span>Mike</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"
+        ></span>Tina</li>
+      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"
+        ></span>Mary</li>
+    </ul>
+
+    <script type="text/javascript">
+
+      $(function() {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+      });
+
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,128 @@
+<html>
+    
+    <head>
+        
+        <title>jQuery5 - Fade</title>
+        
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+        
+        <script type="text/javascript" src="jquery.min.js"></script>
+        
+        <style type="text/css">
+        
+            #circle {
+                
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+                
+            }
+            
+            .square {
+                
+                width: 150px;
+                height: 150px;
+                background-color: aqua;
+                margin: 10px;
+                
+            }
+            
+            #fade2 {
+                
+                display: none;
+                
+            }
+            
+            #toggledText {
+                
+                display: block;
+                
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <div id="circle"></div>
+        
+        <div class="square"></div>
+        
+        <div class="square"></div>
+        
+        
+        <p id="fade1">Paragraph that will fade out..</p>
+        
+        <button id="fadeOut">Click to fade text out!</button>
+        
+        
+        <p id="fade2">Paragraph that will fade in..</p>
+        
+        <button id="fadeIn">Click to fade text in!</button>
+        
+        <hr>
+        <hr>
+        <hr>    
+        
+        <p id="toggledText">This text will disapear and reappear!</p>
+        
+        <button id="toggleIt">Click to toggle!</button>
+       
+        <script type="text/javascript">
+            
+            /*$("div").click(function() {
+                
+                $(this).fadeOut("slow", function() {
+                    
+                    alert("Fadeout has finished, here is a callback.");
+                    
+                });
+                
+                //$(this).hide();
+                
+            })*/
+            
+            $("#fadeOut").click(function() {
+                
+                $("#fade1").fadeOut(function() {
+                    
+                    $("#fade1").fadeIn();
+                    
+                });
+                
+            });
+            
+            $("#fadeIn").click(function() {
+                
+                /*$("#fade2").fadeIn(function() {
+                    
+                    $("#fade2").fadeOut();
+                    
+                });*/
+                
+                $("#fade2").fadeIn();
+                
+            });
+            
+            $("#toggleIt").click(function() {
+                
+                if ($("#toggledText").css("display") == "none") {
+                      
+                    $("#toggledText").fadeIn();
+                      
+                } else {
+                    
+                    $("#toggledText").fadeOut();
+                    
+                }
+                
+            });
+            
+        </script>
+        
+    </body>
+    
+</html>

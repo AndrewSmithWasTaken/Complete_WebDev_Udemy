@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+
+        <title>Javascript If</title>
+
+    </head>
+
+    <body>
+        
+        <p>How many fingers am I holding up?</p>
+        
+        <input type="text" id="guess">
+        
+        <button id="checkGuess">guess!</button>
+
+        <script type="text/javascript">
+            
+            //Using Math.floor to get an integer
+            
+            //var numFingers = Math.floor(Math.random() * (6 - 0)) + 0;
+            
+            var numFingers = Math.floor(Math.random() * 6);
+            
+            console.log(numFingers);
+            
+            document.getElementById("checkGuess").onclick = function() {
+                
+                if (document.getElementById("guess").value == numFingers) {
+                    
+                    alert("Well done!");
+                    
+                }   else {
+                    
+                    alert("Nope! The number was " + numFingers + ". Try again!");
+                    location.reload();
+                    
+                }
+                    
+            }
+
+        </script>
+
+    </body>
+
+</html>

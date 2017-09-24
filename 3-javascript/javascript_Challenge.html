@@ -1,0 +1,73 @@
+<html>
+    
+    <head>
+        
+        <title>Javascript Challenge</title>
+        
+        <style type="text/css">
+        
+            .circle {
+                
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                float: left;
+                margin: 20px;
+                
+            }
+            
+            #red-circle {
+                
+                background-color: red;
+                
+            }
+            
+            #indianred-circle {
+                
+                background-color: indianred;
+                
+            }
+            
+            #darkgoldenrod-circle {
+                
+                background-color: darkgoldenrod;
+                
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="circle" id="red-circle"></div>
+       
+        <div class="circle" id="indianred-circle"></div>
+       
+        <div class="circle" id="darkgoldenrod-circle"></div>
+       
+        <script type="text/javascript">
+        
+            document.getElementById("red-circle").onclick = function() {
+                
+                document.getElementById("red-circle").style.display = "none";
+                
+            }
+            
+            document.getElementById("indianred-circle").onclick = function() {
+                
+                document.getElementById("indianred-circle").style.display = "none";
+                
+            }
+            
+            document.getElementById("darkgoldenrod-circle").onclick = function() {
+                
+                document.getElementById("darkgoldenrod-circle").style.display = "none";
+                
+            }
+        
+        </script>
+        
+    </body>
+    
+</html>

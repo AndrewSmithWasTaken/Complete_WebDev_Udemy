@@ -1,0 +1,72 @@
+<html>
+
+    <head>
+
+        <title>Javascript If</title>
+
+    </head>
+
+    <body>
+        
+        <p>What is the magic word?</p>
+        
+        <input type="text" id="magicWord">
+        
+        <button id="checkMagicWord">Enter</button>
+
+        <script type="text/javascript">
+
+            /*var x = 2;
+            
+            if (x == 1) {
+                
+                alert("x is 1!");
+                
+            } else {
+                
+                alert("x is not 1!");
+                
+            }*/
+            
+            var magicWord = "magic";
+            
+            document.getElementById("checkMagicWord").onclick = function() {
+                
+                if (document.getElementById("magicWord").value == magicWord) {
+                    
+                    alert("Well done!");
+                    
+                }   else {
+                    
+                    alert("Nope!");
+                    
+                }
+                    
+            }
+            
+            /* COURSE VERSION
+            
+            document.getElementById("checkMagicWord").onclick = function() {
+                
+                var magicWordEntered = document.getElementById("magicWord").value;
+                
+                var magicWord = "abracadabra";
+                
+                if (magicWordEntered == magicWord) {
+                    
+                    alert("You got it")
+                    
+                } else {
+                    
+                    alert("Nope, try again!");
+                    
+                }
+                    
+            }*/
+            
+
+        </script>
+
+    </body>
+
+</html>

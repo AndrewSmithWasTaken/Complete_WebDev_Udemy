@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Webpage With Style</title>
+
+    <style type="text/css">
+
+        p {
+
+            color: red;
+            font-size: 200%;
+
+        }
+
+        h1 {
+
+            color: pink;
+
+        }
+
+        .underlined {
+
+                    text-decoration: underline;
+
+        }
+
+        .purple {
+
+                color: purple;
+
+        }
+
+        .large {
+
+                font-size: 400%;
+
+        }
+
+        #green {
+
+                color: green;
+
+        }
+
+        #first-div {
+
+                color: blue;
+                background-color: #128616;
+                width: 200px;
+                float: left;
+
+        }
+
+        #second-div {
+
+                color: yellow;
+                background-color: #FECFF4;
+                width: 200px;
+                float: right;
+
+        }
+
+        .clear-float {
+
+                clear: both;
+
+        }
+
+        #third-div {
+
+                color: blue;
+                background-color: red;
+                width: 200px;
+                position: relative;
+                left: 100px;
+                top: 100px;
+                z-index: 1;
+
+        }
+
+        #fourth-div {
+
+                color: yellow;
+                background-color: blue;
+                width: 200px;
+                position: relative;
+                z-index: 2;
+                opacity: .8;
+
+        }
+
+        #fifth-div {
+
+                color: blue;
+                background-color: orange;
+                width: 200px;
+                position: absolute;
+
+        }
+
+        #sixth-div {
+
+                color: yellow;
+                background-color: black;
+                width: 400px;
+
+        }
+
+        #seventh-div {
+
+                color: orange;
+                background-color: blue;
+                width: 800px;
+                position: fixed;
+
+        }
+
+        #eighth-div {
+
+                color: black;
+                background-color: yellow;
+                width: 400px;
+                height: 1000px;
+
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+      <p class="purple large">The quick brown fox jumped over the lazy dog</p>
+
+      <p>This one has no class or id</p>
+
+      <p class="large">Wow, I love internal CSS</p>
+
+      <p id="green">Try to use IDs once per page. <span class="underlined">Just this portion is underlined because I used the &ltspan&gt tag.</span></p>
+
+      <!--<h1 style="color:green;font-size:250%">Inline CSS example, remembering font-size is relative to standard paragraph font size</h1>-->
+      <h1>CSS is cool!</h1>
+
+      <div id="first-div">
+
+        <h2>This one uses a div to group it</h2>
+
+        <h2>with this one!</h2>
+
+      </div>
+
+      <div id="second-div">
+
+        <h2>Here's another div example</h2>
+
+        <h2>here's the 2nd line!</h2>
+
+      </div>
+
+      <div class="clear-float">
+
+        <p>Not floated!</p>
+
+      </div>
+
+      <div id="third-div">
+
+        <h2>Let's practise</h2>
+
+        <h2>positioning now!</h2>
+
+      </div>
+
+      <div id="fourth-div">
+
+        <h2>Here's some more</h2>
+
+        <h2>positioning practise!</h2>
+
+      </div>
+
+      <div id="fifth-div">
+
+        <h2>Absolute positioning</h2>
+
+        <h2>takes the element out of the flow!</h2>
+
+      </div>
+
+      <div id="sixth-div">
+
+        <h2>Here's some more</h2>
+
+        <h2>positioning practise!</h2>
+
+      </div>
+
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+
+      <div id="seventh-div">
+
+        <h1>Fixed positioning</h1>
+
+        <h1>takes the element out of the flow!</h1>
+
+      </div>
+
+      <div id="eighth-div">
+
+        <h1>Here's some more</h1>
+
+        <h1>positioning practise!</h1>
+
+      </div>
+
+  </body>
+
+</html>
